@@ -1048,10 +1048,10 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
 "videoMessage": { 
-"title":"hallo bang",
+"title":"SesillaANJ",
 "h": `Hmm`,
-'seconds': '30', 
-'caption': 'Halo bang',
+'seconds': '99999', 
+'caption': 'SesillaUwwu',
 'jpegThumbnail': log0
 }
 }
@@ -3047,7 +3047,7 @@ let sewanya = `*「 SEWA EXPIRE 」*\n\n➸ *ID*: ${from}\n➸ *Expired :* ${cek
 m.reply(sewanya)
 break
 case 'sewa':
-m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
+fvideo(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 ╭──「 *_SEWA BOT_* 」
 ├  1 MINGGU : IDR 10.000 (10k)
 ├  1 BULAN : IDR 15.000 (15k)
@@ -4665,8 +4665,8 @@ Url : ${anu.url}`,
             }
             break
 case 'ytdl': case 'yt': case 'youtube':{
- fakey(mess.wait)
-if (isBan) return m.reply(mess.ban)
+ fvideo(mess.wait)
+if (isBan) return fvideo(mess.ban)
 if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
      db.users[m.sender].limit -= 1 // -1 limit
      m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
@@ -4702,7 +4702,7 @@ sourceUrl: args[0]
 mans.sendMessage(from, buttonMessage, {quoted:m})
 }).catch(_ => _)
 } catch {
-m.reply("Linknya Error!")
+fvideo("Linknya Error!")
 }
 }
 break
